@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DogzTeaM (DTM) Website</title>
+<link rel="icon" type="image/png" href="weblogo.png">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f1115;
+        color: #eaeaea;
+    }
+
+    /* Top bar */
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 25px;
+        background: #1a1d24;
+        border-bottom: 1px solid #2a2f3a;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .nav a {
+        color: #eaeaea;
+        margin-left: 15px;
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+
+    .nav a:hover {
+        background: #2a2f3a;
+    }
+
+    /* Layout */
+    .container {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 220px;
+        background: #151821;
+        padding: 15px;
+        border-radius: 10px;
+        height: fit-content;
+    }
+
+    .sidebar a {
+        display: block;
+        color: #ccc;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .sidebar a:hover {
+        background: #2a2f3a;
+        color: white;
+    }
+
+    /* Main */
+    .main {
+        flex: 1;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #1b1f2a, #12141a);
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .hero p {
+        color: #aaa;
+    }
+
+    .buttons {
+        margin-top: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px 15px;
+        background: #2d6cdf;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    .btn:hover {
+        background: #1f56b8;
+    }
+
+    /* Cards */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+
+    .card {
+        background: #151821;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #2a2f3a;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .card a {
+        color: #4ea1ff;
+        text-decoration: none;
+    }
+
+    /* Trending */
+    .trending {
+        margin-top: 20px;
+        padding: 15px;
+        background: #151821;
+        border-radius: 10px;
+        border: 1px solid #2a2f3a;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        background: #1a1d24;
+        color: #888;
+    }
+
+    @media (max-width: 800px) {
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <img src="DTMlogo.png" class="logo" alt="Logo">
+    <div class="nav">
+        <a href="./" target="">Home</a>
+        <a href="./support" target="">Contact</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Navigation</h3>
+        <a href="./games" target="">🎮 Games</a>
+        <a href="./software" target="">🧰 Software</a>
+        <a href="https://puppy38.github.io/Themes" target="">🎨 Themes</a>
+        <a href="./djspace-music" target="">🎵 Music</a>
+        <a href="./books" target="">📚 Books</a>
+        <a href="./pictureblog" target="">🖼️ Pictures And Blog</a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Welcome to the DogzTeam App</h1>
+            <p>Here you can get: Tools, games, huawei themes, wallpapers, books, music and more! (like the website)</p>
+
+            <div class="buttons">
+                <a class="btn" href="https://puppy38.github.io/newweb/games" target="_blank">Play Games</a>
+                <a class="btn" href="https://puppy38.github.io/newweb/software" target="_blank">Software</a>
+                <a class="btn" href="https://puppy38.github.io/newweb/support" target="_blank">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- FEATURED -->
+        <h2>Featured</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Online Audio Player</h3>
+                <p>Listen to your audio files using our app! DO NOT CLOSE THE APP IF YOU WANT TO HEAR YOUR SONG!</p>
+                <a href="https://puppy38.github.io/AudioPlayer" target="">Open →</a>
+            </div>
+
+            <div class="card">
+                <h3>Games</h3>
+                <p>Play browser-based games.</p>
+                <a href="./games" target="">Play →</a>
+            </div>
+
+            <div class="card">
+                <h3>Our YouTube Channel</h3>
+                <p>Dog Videos.</p>
+                <a href="https://www.youtube.com/@ponponi.videos" target="_blank">Explore →</a>
+            </div>
+        </div>
+
+        <!-- TRENDING -->
+        <div class="trending">
+            <h2>🔥 Trending</h2>
+            <p>
+                This section will automatically show the most clicked games,
+                tools, and pages across the website.
+            </p>
+            <p style="color:#777;">
+                Currently: tracking system coming soon.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    Dogzteam 2026
+</div>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
+    }
+</script>
+
+</body>
+</html>
