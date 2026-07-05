@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DogzTeam Games</title>
+<link rel="icon" type="image/png" href="weblogo.png">
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f1115;
+        color: #eaeaea;
+    }
+
+    /* Top bar */
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 25px;
+        background: #1a1d24;
+        border-bottom: 1px solid #2a2f3a;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .nav a {
+        color: #eaeaea;
+        margin-left: 15px;
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+
+    .nav a:hover {
+        background: #2a2f3a;
+    }
+
+    /* Layout */
+    .container {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+        width: 220px;
+        background: #151821;
+        padding: 15px;
+        border-radius: 10px;
+        height: fit-content;
+    }
+
+    .sidebar a {
+        display: block;
+        color: #ccc;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .sidebar a:hover {
+        background: #2a2f3a;
+        color: white;
+    }
+
+    /* Main */
+    .main {
+        flex: 1;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #1b1f2a, #12141a);
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .hero p {
+        color: #aaa;
+    }
+
+    /* Game container */
+    .gamebox {
+        background: #151821;
+        padding: 15px;
+        border-radius: 12px;
+        border: 1px solid #2a2f3a;
+    }
+
+    iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+        background: #1a1d24;
+        color: #888;
+    }
+
+    @media (max-width: 800px) {
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div style="display:flex; align-items:center; gap:10px;">
+        <img src="icwe.png" style="height:35px;" alt="icon">
+        <img src="DTMlogo.png" class="logo" alt="DogzTeam">
+        <strong>Games</strong>
+    </div>
+
+    <div class="nav">
+        <a href="https://puppy38.github.io/newweb">Home</a>
+        <a href="https://puppy38.github.io/newweb/support">Contact</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>🎮 Games Hub</h1>
+            <p>Play browser games and experimental projects made by DogzTeam.</p>
+        </div>
+
+        <!-- GAME -->
+        <div class="gamebox">
+            <h2>All Games</h2>
+            <p style="color:#aaa;">Select and play directly below:</p>
+
+            <iframe src="https://puppy38.github.io/games/"></iframe>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    DogzTeam Games • 2026
+</div>
+
+</body>
+</html>
